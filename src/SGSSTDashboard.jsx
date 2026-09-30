@@ -285,6 +285,43 @@ const CLAUSULAS = [
   { clausula: "10.2", cap: 10, titulo: "Incidente, no conformidad y acción correctiva", docs: ["PR-SST-05", "PR-SST-11", "RG-SST-10", "RG-SST-17"] },
 ];
 
+const DS44_TITULOS = [
+  { n: 1, nombre: "Disposiciones Generales", resumen: "Objetivos del reglamento, definiciones legales y principios rectores de la gestión preventiva (enfoque de género, mejora continua, compromiso y participación)." },
+  { n: 2, nombre: "Gestión de la Prevención en Lugares de Trabajo", resumen: "Núcleo operativo del reglamento: matriz de riesgos, programa preventivo, jerarquía de control, EPP, capacitación, consulta y emergencias." },
+  { n: 3, nombre: "Organización y Estructura Preventiva", resumen: "Instrumentos institucionales exigibles: Sistema de Gestión, CPHS, Departamento de Prevención de Riesgos, Reglamento Interno y Mapas de Riesgos." },
+  { n: 4, nombre: "Gestión Preventiva en Entidades de Menor Tamaño", resumen: "Régimen simplificado para entidades de hasta 25 trabajadores — no aplica a Clínica Indisa por su tamaño." },
+  { n: 5, nombre: "Vigilancia, Investigación y Registro", resumen: "Vigilancia de la salud ocupacional, investigación de siniestros, y registro documental con indicadores desagregados por sexo." },
+  { n: 6, nombre: "Fiscalización y Disposiciones Finales", resumen: "Órganos fiscalizadores (SEREMI de Salud, Dirección del Trabajo) y disposiciones transitorias de entrada en vigencia." },
+];
+
+const DS44_ARTICULOS = [
+  { art: "Art. 3-4", tit: 1, titulo: "Principios de la gestión preventiva y obligaciones del empleador", docs: ["MN-SST-01", "PO-SST-01"], iso: "5.1 / 5.2" },
+  { art: "Art. 7", tit: 2, titulo: "Matriz de identificación de peligros y evaluación de riesgos", docs: ["PR-SST-01", "RG-SST-01"], iso: "6.1.2" },
+  { art: "Art. 8", tit: 2, titulo: "Programa de trabajo preventivo", docs: ["DO-SST-02"], iso: "6.2" },
+  { art: "Art. 9", tit: 2, titulo: "Prelación de las medidas preventivas", docs: ["PR-SST-14", "PR-SST-15"], iso: "8.1.2" },
+  { art: "Art. 10", tit: 2, titulo: "Gestión preventiva en máquinas y equipos (LOTO)", docs: ["PR-SST-15", "RG-SST-21"], iso: "8.1.2" },
+  { art: "Art. 13", tit: 2, titulo: "Uso de elementos de protección personal", docs: ["PR-SST-14", "RG-SST-05", "RG-SST-40"], iso: "8.1.2" },
+  { art: "Art. 14", tit: 2, titulo: "Evaluación del cumplimiento del programa preventivo", docs: ["RG-SST-06", "RG-SST-18"], iso: "9.1.1" },
+  { art: "Art. 15-16", tit: 2, titulo: "Información y capacitación de riesgos laborales", docs: ["PR-SST-13", "RG-SST-42", "RG-SST-03"], iso: "7.2 / 7.3" },
+  { art: "Art. 17", tit: 2, titulo: "Consulta y participación de los trabajadores", docs: ["PR-SST-03", "RG-SST-45"], iso: "5.4" },
+  { art: "Art. 18-19", tit: 2, titulo: "Riesgo grave e inminente y plan de gestión de emergencias", docs: ["PR-SST-04", "PT-075", "RG-SST-16"], iso: "8.2" },
+  { art: "Art. 20", tit: 2, titulo: "Coordinación entre entidades que comparten lugar de trabajo", docs: ["PR-SST-06", "RG-SST-24"], iso: "8.1.4" },
+  { art: "Art. 22", tit: 3, titulo: "Elementos del Sistema de Gestión de SST", docs: ["MN-SST-01"], iso: "4-10 (marco completo)" },
+  { art: "Art. 23-49", tit: 3, titulo: "Constitución y funcionamiento del Comité Paritario (CPHS)", docs: ["PR-SST-03", "RG-SST-11", "RG-SST-12", "RG-SST-13"], iso: "5.4 (sin equivalencia mecánica)" },
+  { art: "Art. 50-55", tit: 3, titulo: "Departamento de Prevención de Riesgos", docs: [], brecha: "A la espera del organigrama institucional (misma brecha que cláusula 5.3 ISO)", iso: "5.3 (sin equivalencia mecánica)" },
+  { art: "Art. 56-61", tit: 3, titulo: "Reglamento Interno de Higiene y Seguridad", docs: ["DO-SST-01"], iso: "Sin equivalencia directa" },
+  { art: "Art. 58 letra j)", tit: 3, titulo: "Protocolo de prevención del acoso sexual, laboral y violencia (Ley Karin)", docs: ["PR-SST-16", "RG-SST-44"], iso: "Sin equivalencia directa" },
+  { art: "Art. 62-63", tit: 3, titulo: "Mapas de riesgos", docs: ["DO-SST-03"], iso: "Sin equivalencia directa" },
+  { art: "Art. 64-66", tit: 4, titulo: "Sistema simplificado para entidades de hasta 25 trabajadores", docs: [], brecha: "No aplica — Clínica Indisa excede el umbral de tamaño (régimen general aplica)", iso: "N/A" },
+  { art: "Art. 67", tit: 5, titulo: "Vigilancia del ambiente y la salud de los trabajadores", docs: ["PR-SST-12", "PT-MIN-01", "PT-MIN-02", "PT-MIN-03", "PT-MIN-04"], iso: "9.1.1" },
+  { art: "Art. 71", tit: 5, titulo: "Investigación de las causas de siniestros laborales", docs: ["PR-SST-05", "RG-SST-17"], iso: "10.2" },
+  { art: "Art. 72-73", tit: 5, titulo: "Registro documental e indicadores de gestión", docs: ["RG-SST-06", "RG-SST-18", "PR-SST-07"], iso: "7.5 / 9.1.1" },
+  { art: "Art. 74", tit: 5, titulo: "Desagregación por sexo en registros e indicadores", docs: ["RG-SST-06", "RG-SST-03"], iso: "Sin equivalencia directa" },
+  { art: "Art. 77", tit: 6, titulo: "Fiscalización y notificación a la Dirección del Trabajo", docs: ["RG-SST-16"], iso: "9.1.2" },
+];
+
+const DS44_SIN_EQUIVALENCIA = DS44_ARTICULOS.filter((a) => (a.iso || "").includes("Sin equivalencia"));
+
 const HITOS = [
   { fecha: "Hito 1", titulo: "Diagnóstico inicial", detalle: "Revisión rigurosa de la carpeta en Drive; hallazgo crítico: PT-MIN declarados \"Completado\" en la Lista Maestra pero ausentes como archivos reales." },
   { fecha: "Hito 2", titulo: "Desarrollo acelerado de Nivel 4", detalle: "37 registros desarrollados por exigibilidad legal: requisitos legales, emergencias, investigación de accidentes, EPP, contratistas, capacitación, auditoría." },
@@ -360,6 +397,31 @@ export default function SGSSTDashboard() {
   const [cumplimientoQuery, setCumplimientoQuery] = useState("");
   const [soloBrechas, setSoloBrechas] = useState(false);
   const [roadmapResponsable, setRoadmapResponsable] = useState("Todos");
+  const [ds44Colapsados, setDs44Colapsados] = useState({});
+  const [ds44Query, setDs44Query] = useState("");
+  const [ds44SoloBrechas, setDs44SoloBrechas] = useState(false);
+  const [ds44SinIso, setDs44SinIso] = useState(false);
+
+  function exportDS44CSV() {
+    const q = ds44Query.trim().toLowerCase();
+    let rows = DS44_ARTICULOS;
+    if (ds44SoloBrechas) rows = rows.filter((a) => a.docs.length === 0);
+    if (ds44SinIso) rows = rows.filter((a) => (a.iso || "").includes("Sin equivalencia"));
+    if (q) rows = rows.filter((a) => a.art.toLowerCase().includes(q) || a.titulo.toLowerCase().includes(q) || a.docs.some((code) => code.toLowerCase().includes(q)));
+    const header = "Articulo,Titulo,Equivalencia ISO,Documentos,Estado\n";
+    const body = rows.map((a) => `"${a.art}","${a.titulo.replace(/"/g, '""')}","${(a.iso || "").replace(/"/g, '""')}","${a.docs.join("; ")}","${a.docs.length > 0 ? "Cubierto" : "Brecha"}"`).join("\n");
+    const blob = new Blob([header + body], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "ds44-matriz-cumplimiento.csv";
+    link.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function toggleDs44Titulo(n) {
+    setDs44Colapsados((prev) => ({ ...prev, [n]: !prev[n] }));
+  }
   const searchRef = React.useRef(null);
 
   function toggleCapitulo(n) {
@@ -525,6 +587,7 @@ export default function SGSSTDashboard() {
             { id: "resumen", label: "Resumen", icon: LayoutGrid },
             { id: "documentos", label: "Documentos", icon: Table2 },
             { id: "cumplimiento", label: "Cumplimiento ISO 45001", icon: ListChecks },
+            { id: "ds44", label: "Cumplimiento D.S. N°44", icon: BookOpen },
             { id: "roadmap", label: "Hoja de Ruta", icon: Milestone },
           ].map((t) => {
             const Icon = t.icon;
@@ -1151,6 +1214,207 @@ export default function SGSSTDashboard() {
           </div>
           <p className="text-xs mt-3" style={{ color: "#8A948F" }}>
             Esta matriz es el insumo directo del Programa Trienal de Auditoría Interna (RG-SST-52), que garantiza que las 23 cláusulas se auditen en un ciclo de 3 años. Clic en el encabezado de cada capítulo para colapsarlo.
+          </p>
+        </section>
+      </>)}
+
+      {tab === "ds44" && (<>
+        {/* DS44 MATURITY INDEX */}
+        <section>
+          <h2 className="font-mono text-xs tracking-widest uppercase mb-4" style={{ color: "#3D5A80" }}>
+            Índice de Cumplimiento — Decreto Supremo N°44 (2024)
+          </h2>
+          <div className="rounded-lg bg-white border p-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-center" style={{ borderColor: "#DCE3DF" }}>
+            <div className="text-center md:border-r" style={{ borderColor: "#EEF1EF" }}>
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <Gauge size={18} color="#009DDD" />
+                <span className="font-mono text-xs uppercase tracking-wider" style={{ color: "#8A948F" }}>Cumplimiento D.S. N°44</span>
+              </div>
+              <div className="font-display text-5xl" style={{ color: "#10262B" }}>
+                {Math.round((DS44_ARTICULOS.filter((a) => a.docs.length > 0).length / DS44_ARTICULOS.length) * 100)}%
+              </div>
+              <div className="text-xs mt-2" style={{ color: "#8A948F" }}>
+                {DS44_ARTICULOS.filter((a) => a.docs.length > 0).length}/{DS44_ARTICULOS.length} bloques normativos con cobertura documental
+              </div>
+            </div>
+            <div>
+              <ResponsiveContainer width="100%" height={200}>
+                <RadarChart data={DS44_TITULOS.map((t) => {
+                  const arts = DS44_ARTICULOS.filter((a) => a.tit === t.n);
+                  const cub = arts.filter((a) => a.docs.length > 0).length;
+                  return { titulo: `Tít. ${t.n}`, cobertura: Math.round((cub / arts.length) * 100) };
+                })}>
+                  <PolarGrid stroke="#DCE3DF" />
+                  <PolarAngleAxis dataKey="titulo" tick={{ fontSize: 10, fill: "#5B726C" }} />
+                  <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 9, fill: "#C7D2CD" }} />
+                  <Radar dataKey="cobertura" stroke="#B5541F" fill="#B5541F" fillOpacity={0.3} />
+                  <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid #DCE3DF", fontSize: 12 }} formatter={(v) => `${v}%`} />
+                </RadarChart>
+              </ResponsiveContainer>
+            </div>
+            <div className="text-sm leading-relaxed" style={{ color: "#33413D" }}>
+              El D.S. N°44 (que reemplazó al D.S. N°40, derogado) establece el <strong>piso legal obligatorio</strong> en Chile para la gestión preventiva. Su Artículo 22 exige 5 elementos mínimos de un Sistema de Gestión de SST que se corresponden casi uno a uno con la estructura PDCA de ISO 45001:2018 — por lo que el diseño documental de este sistema cubre simultáneamente ambos marcos, incorporando además los 4 instrumentos exclusivamente chilenos que la ISO no exige: CPHS, Departamento de Prevención de Riesgos, Reglamento Interno y Mapas de Riesgos.
+            </div>
+          </div>
+        </section>
+
+        {/* VIGENCIA BANNER */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="rounded-lg p-5 border flex items-start gap-3" style={{ background: "#EAF6FD", borderColor: "#BEE1F5" }}>
+            <BookOpen size={20} color="#0E64C4" className="mt-0.5 shrink-0" />
+            <div>
+              <div className="text-sm font-semibold mb-1" style={{ color: "#0A4A87" }}>Vigencia y derogación</div>
+              <p className="text-sm" style={{ color: "#0A4A87" }}>
+                Publicado el 27-jul-2024, vigente en su versión única desde el 01-feb-2025. Deroga expresamente el <strong>D.S. N°40</strong> (1969) y el <strong>D.S. N°54</strong> (1969) — el mismo D.S. N°40 que el sistema documental anterior (PT-346) citaba como marco vigente.
+              </p>
+            </div>
+          </div>
+          <div className="rounded-lg p-5 border flex items-start gap-3" style={{ background: "#FCEEE3", borderColor: "#F0D3B8" }}>
+            <AlertTriangle size={20} color="#B5541F" className="mt-0.5 shrink-0" />
+            <div>
+              <div className="text-sm font-semibold mb-1" style={{ color: "#8A3E12" }}>Instrumentos sin equivalencia mecánica en ISO 45001</div>
+              <p className="text-sm" style={{ color: "#8A3E12" }}>
+                {DS44_SIN_EQUIVALENCIA.length} bloques normativos del D.S. N°44 no tienen contraparte directa en la norma ISO y deben mantenerse como instrumentos propios: RIOHS, protocolo Ley Karin, Mapas de Riesgos y desagregación por sexo.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <h2 className="font-mono text-xs tracking-widest uppercase" style={{ color: "#3D5A80" }}>
+              Matriz de Cumplimiento — por Título del Reglamento
+            </h2>
+            <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border" style={{ borderColor: "#DCE3DF" }}>
+                <Search size={12} color="#8A948F" />
+                <input
+                  value={ds44Query}
+                  onChange={(e) => setDs44Query(e.target.value)}
+                  placeholder="Buscar artículo o código..."
+                  className="text-xs outline-none bg-transparent w-40"
+                />
+              </div>
+              <button
+                onClick={() => setDs44SoloBrechas(!ds44SoloBrechas)}
+                className="text-xs px-3 py-1.5 rounded-full border flex items-center gap-1.5 transition-colors"
+                style={{ borderColor: ds44SoloBrechas ? "#B5541F" : "#DCE3DF", background: ds44SoloBrechas ? "#FCEEE3" : "#FFFFFF", color: ds44SoloBrechas ? "#8A3E12" : "#5B726C" }}
+              >
+                <AlertTriangle size={12} /> Solo brechas
+              </button>
+              <button
+                onClick={() => setDs44SinIso(!ds44SinIso)}
+                className="text-xs px-3 py-1.5 rounded-full border flex items-center gap-1.5 transition-colors"
+                style={{ borderColor: ds44SinIso ? "#0E64C4" : "#DCE3DF", background: ds44SinIso ? "#EAF6FD" : "#FFFFFF", color: ds44SinIso ? "#0A4A87" : "#5B726C" }}
+                title="Mostrar solo los instrumentos exclusivamente chilenos, sin equivalencia mecánica en ISO 45001"
+              >
+                <BookOpen size={12} /> Sin equivalencia ISO
+              </button>
+              <button
+                onClick={exportDS44CSV}
+                className="text-xs px-3 py-1.5 rounded-full border flex items-center gap-1.5 hover:bg-white transition-colors"
+                style={{ borderColor: "#DCE3DF", color: "#3D5A80" }}
+              >
+                <FileText size={12} /> Exportar CSV
+              </button>
+            </div>
+          </div>
+          <div className="space-y-5">
+            {DS44_TITULOS.map((titObj) => {
+              const q = ds44Query.trim().toLowerCase();
+              let arts = DS44_ARTICULOS.filter((a) => a.tit === titObj.n);
+              if (ds44SoloBrechas) arts = arts.filter((a) => a.docs.length === 0);
+              if (ds44SinIso) arts = arts.filter((a) => (a.iso || "").includes("Sin equivalencia"));
+              if (q) arts = arts.filter((a) => a.art.toLowerCase().includes(q) || a.titulo.toLowerCase().includes(q) || a.docs.some((code) => code.toLowerCase().includes(q)));
+              if (arts.length === 0) return null;
+              const cubiertos = arts.filter((a) => a.docs.length > 0).length;
+              const pctTit = Math.round((cubiertos / arts.length) * 100);
+              const colapsado = !!ds44Colapsados[titObj.n];
+              return (
+                <div key={titObj.n} className="rounded-lg bg-white border overflow-hidden" style={{ borderColor: "#DCE3DF" }}>
+                  <button
+                    onClick={() => toggleDs44Titulo(titObj.n)}
+                    className="w-full flex items-center justify-between px-4 py-3 text-left hover:brightness-95 transition-all"
+                    style={{ background: "#0E33790D" }}
+                  >
+                    <div className="flex items-center gap-2">
+                      <ChevronDown size={14} color="#5B726C" style={{ transform: colapsado ? "rotate(-90deg)" : "none", transition: "transform 0.2s" }} />
+                      <span className="font-mono text-xs font-semibold px-2 py-0.5 rounded-md" style={{ background: "#0E3379", color: "#FFFFFF" }}>
+                        Título {titObj.n}
+                      </span>
+                      <span className="text-sm font-semibold" style={{ color: "#10262B" }}>{titObj.nombre}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-24 h-1.5 rounded-full hidden sm:block" style={{ background: "#EEF1EF" }}>
+                        <div className="h-1.5 rounded-full" style={{ width: `${pctTit}%`, background: pctTit === 100 ? "#1B6E52" : "#009DDD" }} />
+                      </div>
+                      <span className="font-mono text-xs" style={{ color: "#5B726C" }}>{cubiertos}/{arts.length}</span>
+                    </div>
+                  </button>
+                  {!colapsado && (
+                    <div className="divide-y" style={{ borderColor: "#EEF1EF" }}>
+                      <div className="px-4 py-2.5" style={{ background: "#FAFBFA" }}>
+                        <p className="text-xs leading-relaxed" style={{ color: "#5B726C" }}>{titObj.resumen}</p>
+                      </div>
+                      {arts.map((a) => {
+                        const cubierto = a.docs.length > 0;
+                        return (
+                          <div key={a.art} className="p-4 flex flex-col sm:flex-row sm:items-center gap-3">
+                            <div className="flex items-center gap-3 sm:w-72 shrink-0 flex-wrap">
+                              <span
+                                className="font-mono text-xs font-semibold px-2 py-1 rounded-md whitespace-nowrap"
+                                style={{ background: cubierto ? "#EAF6FD" : "#FCEEE3", color: cubierto ? "#0E64C4" : "#B5541F" }}
+                              >
+                                {a.art}
+                              </span>
+                              <span className="text-sm font-medium" style={{ color: "#33413D" }}>{a.titulo}</span>
+                              {a.iso && !a.iso.includes("Sin equivalencia") && a.iso !== "N/A" && !a.iso.includes("marco completo") && !a.iso.includes("mecánica") ? (
+                                <button
+                                  onClick={() => { setCumplimientoQuery(a.iso.split(/[\s/]/)[0]); setTab("cumplimiento"); }}
+                                  className="text-10 font-mono px-1.5 py-0.5 rounded-full shrink-0 hover:brightness-95 transition-all"
+                                  style={{ background: "#EAF6FD", color: "#0E64C4" }}
+                                  title="Ver esta cláusula en la pestaña Cumplimiento ISO 45001"
+                                >
+                                  ISO {a.iso} <ChevronRight size={9} style={{ display: "inline" }} />
+                                </button>
+                              ) : (
+                                <span className="text-10 font-mono px-1.5 py-0.5 rounded-full shrink-0" style={{ background: "#F5F7F5", color: "#8A948F" }} title="Sin equivalencia mecánica en ISO 45001:2018">
+                                  ISO {a.iso}
+                                </span>
+                              )}
+                            </div>
+                            <div className="flex-1 flex flex-wrap gap-1.5 items-center">
+                              {cubierto ? (
+                                a.docs.map((code) => {
+                                  const target = DOCS_BY_CODE[code];
+                                  return (
+                                    <button
+                                      key={code}
+                                      onClick={() => target && setSelected(target)}
+                                      className="font-mono text-xs px-2 py-1 rounded-md border hover:brightness-95"
+                                      style={{ borderColor: target ? target.color : "#DCE3DF", color: target ? target.color : "#8A948F" }}
+                                    >
+                                      {code}
+                                    </button>
+                                  );
+                                })
+                              ) : (
+                                <span className="flex items-center gap-1.5 text-xs px-2 py-1 rounded-md" style={{ background: "#FCEEE3", color: "#8A3E12" }}>
+                                  <AlertTriangle size={12} /> {a.brecha || "Sin cobertura documental"}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-xs mt-3" style={{ color: "#8A948F" }}>
+            El D.S. N°44 derogó y reemplazó al D.S. N°40 (1969) — instrumento que citaba el sistema documental anterior (PT-346). Clic en el encabezado de cada título para colapsarlo.
           </p>
         </section>
       </>)}
