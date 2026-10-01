@@ -74,3 +74,11 @@ prefijo nuevo, actualizar `CODE_REGEX` para que se enlace.
 - Trabajar en una rama y abrir un pull request hacia `main`; `main` debe tener siempre la versión
   vigente, porque las sesiones nuevas parten desde ahí.
 - No versionar `dist/` ni `node_modules/`.
+
+## Publicación
+
+- El dashboard se publica en https://matiasbarreranavarro.github.io/SGSST-CLINICA-INDISA/ mediante
+  `.github/workflows/deploy.yml`, que compila y despliega en cada push a `main`.
+- **El sitio es público** (el usuario lo autorizó). Todo lo que se agregue al dashboard queda visible
+  en internet al integrarse en `main`: advertir al usuario antes de incorporar información sensible
+  (datos personales, nombres de trabajadores, casos individuales).

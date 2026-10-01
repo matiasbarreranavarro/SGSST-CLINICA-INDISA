@@ -5,6 +5,11 @@ de Clínica Indisa: documentos del SGSST por nivel, indicadores, cumplimiento de
 
 Construido con React + Vite, Tailwind CSS, Recharts y lucide-react.
 
+**Ver el dashboard:** https://matiasbarreranavarro.github.io/SGSST-CLINICA-INDISA/
+
+Se publica automáticamente en GitHub Pages cada vez que se actualiza `main`
+(`.github/workflows/deploy.yml`). El sitio es **público**.
+
 ## Uso
 
 Requiere [Node.js](https://nodejs.org) 18 o superior.
