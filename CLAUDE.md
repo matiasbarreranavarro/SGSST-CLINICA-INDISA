@@ -31,6 +31,13 @@ Playwright). Verificar también el ancho de celular (~390 px).
 - `src/main.jsx`, `src/index.css`, `index.html` — arranque de Vite/React y Tailwind.
 - `tailwind.config.js`, `postcss.config.js`, `vite.config.js` — configuración (`base: "./"` para
   poder publicar en una subruta, p. ej. GitHub Pages).
+- `.claude/agents/sgsst-dashboard.md` — agente especialista en este dashboard: flujo de trabajo,
+  reglas de contenido, advertencias sobre datos públicos y forma de comunicarse con el usuario.
+  Para cambios al dashboard, usarlo (o seguir sus mismas reglas).
+- `.claude/skills/verificar-dashboard/` — skill que compila y prueba el dashboard en Chromium
+  (5 pestañas, escritorio y 390 px, errores de consola, desborde horizontal, capturas):
+  `node .claude/skills/verificar-dashboard/verificar.cjs --out <carpeta>`. Es la forma estándar de
+  cumplir la verificación exigida en "Comandos".
 
 ## Datos (constantes al inicio de `SGSSTDashboard.jsx`)
 
